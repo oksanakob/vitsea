@@ -1,51 +1,57 @@
 * {
-	margin: 0;
-	padding: 0;
-	
-font-family: myriad-pro, sans-serif;
-font-style: normal;
-font-weight: 300;
+  max-width: 1360px;
+  margin: auto;
+  padding: 0;
+  font-family: myriad-pro, sans-serif;
+  font-style: normal;
+  font-weight: 300;
 }
 
-html,body {
-	width: 100%;
-	height: 100%;
-}
-img{
-position:absolute;
-z-index:-3;
-}
-#logo-vitsea{
-position:absolute;
-z-index:0;
-margin-left:116px;
-margin-top:45px;
-}
-nav {
-
-	float: right;
-	margin-top: 65px;
-	margin-right: 108px;
+html,
+body {
+  width: 100%;
+  height: 100%;
 }
 
-nav li {
-  position:relative;
-	float:left;
-	list-style: none;
-}
-nav li a {
-  
-	font-size: 24px;
-	text-decoration: none;
-	padding: 0 20px ;
-	
-	color: white;
+img {
+  position: absolute;
+  z-index: -3;
 }
 
-nav li a:hover {
-	color: #46afa3;
+#logo-vitsea {
+  position: absolute;
+  z-index: 0;
+  margin-left: 116px;
+  margin-top: 45px;
 }
-.Terms_of_Use___Privacy_Policy___Site_Map {
+
+header nav {
+  float: right;
+  margin-top: 65px;
+  margin-right: 108px;
+  margin-left: 300px;
+}
+
+header nav li {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  float: left;
+  list-style: none;
+}
+
+header nav li a {
+  font-size: 24px;
+  text-decoration: none;
+  padding: 0 20px;
+  color: white;
+}
+
+header nav li a:hover {
+  color: #46afa3;
+}
+
+.Terms-of-Use-Privacy-Policy-Site-Map {
   font-size: 12px;
   font-family: "Myriad Pro";
   color: rgb(255, 255, 255);
@@ -56,7 +62,8 @@ nav li a:hover {
   top: 3455.494px;
   z-index: 193;
 }
-.©_2018_VitSea_All_rights_reserved__ {
+
+.©-2018-vitsea-all-rights-reserved {
   font-size: 12px;
   font-family: "Myriad Pro";
   color: rgb(255, 255, 255);
@@ -67,8 +74,9 @@ nav li a:hover {
   top: 3425.494px;
   z-index: 192;
 }
-#Do_you_need_Vitamin_Sea {
-  font-size: 380%;
+
+#do-you-need-vitamin-sea {
+  font-size: 250%;
   font-family: "Myriad Pro";
   color: rgb(254, 254, 254);
   text-align: center;
@@ -77,27 +85,30 @@ nav li a:hover {
   top: 180px;
   z-index: 1;
 }
-#About_Us {
+
+.about-us {
   position: absolute;
-  font-size: 380%;
+  font-size: 250%;
   font-family: "Myriad Pro";
   color: rgb(0, 166, 128);
   line-height: 1.2;
-  text-align: center;
-  left: 724px;
+  align-items: center;
+  justify-content: center;
   top: 840px;
   z-index: 110;
 }
-#main-sea-img{
+
+#main-sea-img {
 
   top: 940px;
 }
-#info{
-  position: absolute;
-  padding: 900px 130px 0px 724px;
-  font-size: 100%;
-  font-family: "Myriad Pro";
-  float:right;
-  top: 1000px;
-  z-index: 110;
+
+#info {
+  
+  font-size: 30%;
+  color: rgb(0, 166, 128);
+  align-items: flex-end;
+  justify-content: flex-end;
+  left: 724px;
+  top: 940px;
 }
