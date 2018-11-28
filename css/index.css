@@ -10,12 +10,6 @@ body {
 
 
 }
-.grid-container {
-    display: grid;    
-    -grid-template-columns: repeat(12);
-    -grid-template-rows: 50px 350px 50px;
-    -grid-gap: 5px;
-}
 
 header {
   min-height: 679px;
@@ -25,30 +19,59 @@ header {
   background-repeat: no-repeat;
   background-color: blue;
   /*display: flex;*/
-  
 }
 
-header .banner {
-
-  /*display: flex;
+header .topnav {
+  display: flex;
   justify-content: space-around;
-*/
   /*  align-items: center;
   justify-content: center;*/
 }
 
-header .banner nav {
-  display: flex;
-  /*flex: 1;*/
-  justify-content: space-around;
-  margin: 0px 65px 10px 45px;
+header .header-logo {
+  /*display: flex;
+  margin-top: 45px 0 0 30px;
+  justify-content: space-around;*/
+  margin-top: 45px;
 }
 
-header nav .main-menu a {
+header .main-menu {
+  /*display: flex;
+  justify-content: space-around;*/
+  margin-top: 65px;
+
+}
+
+header .main-menu a {
   text-decoration: none;
   color: white;
 
 
+}
+
+header .container-vitamin-sea {
+
+  justify-content: center;
+}
+
+
+header .container-vitamin-sea .sea-h1 {
+  display: flex;
+
+  justify-content: center;
+  font-weight: bolder;
+  color: white;
+  font-size: 250%;
+}
+
+header .container-vitamin-sea .sea-h1 .sea-bold {
+  font-weight: bold;
+}
+
+header .form-container {
+  display: flex;
+
+  justify-content: center;
 }
 
 /*header #home-vitsea {*/
@@ -57,14 +80,6 @@ header nav .main-menu a {
 
 /*}*/
 
-header .header-logo {
-  /*display: flex;
-  margin-top: 45px 0 0 30px;
-  justify-content: space-around;*/
- margin: 45px 10px 10px 116px;
-}
-
-
 @media (min-width: 900px) {
   header nav {
     display: flex;
@@ -72,7 +87,6 @@ header .header-logo {
 
   #logo-vitsea {
     /*margin-left: 116px;*/
-    margin-top: 45px;
   }
 
 
