@@ -73,7 +73,7 @@ header .container-vitamin-sea .sea-h1 .sea-bold {
 header .form-container {
   /* width: 1128px;*/
   display: flex;
-  background-color: white;
+  /*background-color: white;*/
   justify-content: center;
 }
 
