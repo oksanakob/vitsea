@@ -19,7 +19,6 @@ header {
   /*display: flex;*/
 }
 
-
 header .topnav {
 
   display: flex;
@@ -48,6 +47,37 @@ header .main-menu a {
   color: white;
   font-size: 1.5em;
 
+}
+
+main .card-body {
+    display: flex;
+    flex-direction: row;
+
+}
+
+main .card-left-side {
+    display: flex;
+    justify-content: flex-start;
+}
+
+main .card-right-side {
+    width: 12.75rem;
+    height: 11.25rem;
+    display: flex;
+    flex-direction: column;
+
+}
+main .card-right-side p{
+   margin:  0.625rem;
+}
+
+main .card-right-side a{
+    display: flex;
+    width: 6.875rem;
+    height: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    margin:0 2.875rem;
 }
 
 .footer-container {

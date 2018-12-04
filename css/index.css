@@ -71,10 +71,25 @@ header .container-vitamin-sea .sea-h1 .sea-bold {
 }
 
 header .form-container {
-  /* width: 1128px;*/
+  max-width: 1128px;
+  margin: auto;
   display: flex;
-  /*background-color: white;*/
+  background-color: white;
   justify-content: center;
+}
+
+header .btn-primary .my-1 {
+  color: #f8c410;
+}
+
+header .form-control {
+  display: flex;
+  margin: 0.4em;
+}
+
+.return{
+  display: flex;
+  margin: 3em;
 }
 
 main {}
