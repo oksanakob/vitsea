@@ -26,6 +26,33 @@
                 <!--<li><a href="#feedback">Feedback</a></li>-->
             </div>
         </nav>
+        <div class="form-container">
+                <form class="form-inline">
+                    <input type="text" class="form-control" id="validationCustom03" placeholder="Destination" required>
+                    <!-- HTML Form (wrapped in a .bootstrap-iso div) -->
+                    <input class="form-control depart" id="date" name="date" placeholder="Depart" type="text" />
+                    <input class="form-control return" id="date" name="date" placeholder="Return" type="text" />
+                    <div><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                    <option selected>Rooms</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                      </select>
+                        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                    <option selected>Adults</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                      </select>
+                        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                    <option selected>Children</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                      </select>
+                        <button type="submit" class="btn btn-warning">Search</button>
+                </form>
+                </div>
     </header>
 
     <main>

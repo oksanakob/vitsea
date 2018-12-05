@@ -390,8 +390,262 @@ main .middle-grid .four-feedbacks .feedback .p {
 footer .footer-info {
 
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
+  flex-wrap: wrap;
+  color: white;
 
+}
+
+footer .header-logo {
+  /*display: flex;
+  margin-top: 45px 0 0 30px;
+  justify-content: space-around;*/
+  margin-top: 8rem;
+}
+
+footer .main-menu {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+  justify-content: space-around;
+  flex-grow: 0.5;
+}
+
+footer .main-menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5em;
+}
+
+.costyl {
+  opacity: 0;
+
+}
+}
+/**************************@media min-width: 720px**********************/
+
+@media (min-width: 720px) {
+  
+  header {
+  min-height: 42.4375em;
+  background-image: url(../img/home-vitsea.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: white;
+  /*display: flex;*/
+}
+
+
+header .topnav {
+  display: flex;
+  justify-content: space-around;
+  /*  align-items: center;
+  justify-content: center;*/
+}
+
+header .header-logo {
+  display: flex;
+  align-items: center;
+  margin-top: 2.8125em;
+}
+
+header .main-menu {
+  display: flex;
+  margin-top: 4.0625em;
+  justify-content: space-around;
+  flex-grow: 0.1;
+  align-items: flex-end;
+}
+
+header .main-menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5em;
+
+}
+
+header .container-vitamin-sea {
+margin: 4rem 0 0 0;
+  justify-content: center;
+}
+
+
+header .container-vitamin-sea .sea-h1 {
+
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 3.75rem;
+}
+
+
+header .container-vitamin-sea .sea-h1 .sea-bold {
+  font-weight: bold;
+}
+
+header .form-container {
+  max-width: 56.25rem;
+  /*height: 5rem;*/
+  margin: auto;
+  display: flex;
+  background-color: white;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+header .btn-primary .my-1 {
+  color: #f8c410;
+}
+
+header .form-control {
+  display: flex;
+  margin: 0.4em;
+}
+
+.depart {
+  max-width: 7em;
+}
+
+.return {
+  display: flex;
+  max-width: 7em;
+  margin: 3em;
+}
+
+main {}
+
+main .middle-grid {}
+
+.about-us {
+  margin: 10rem 0 0 0;
+  display: flex;
+  font-size: 3.75em;
+  color: rgb(0, 166, 128);
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.text-about-us {
+  display: flex;
+  color: #666666;
+  justify-content: center;
+  margin: 0 4rem 0 4rem;
+  z-index: 2;
+
+}
+
+.main-pic-with-3-circles {
+  min-height: 64.625em;
+  background-image: url(../img/main-sea-img.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: white;
+  z-index: -20;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  /*align-items: stretch;*/
+}
+
+.titles-our-tours {
+  min-height: 37.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  /*flex-grow: 0.5;*/
+}
+
+.deals-of-the-day {
+  font-weight: 500;
+  color: #666666;
+  font-size: 1.875em;
+}
+
+.best-offers {
+  font-weight: 500;
+  font-size: 1.875em;
+  color: #666666;
+}
+
+.stars {
+  font-weight: 500;
+  font-size: 1.875em;
+  color: #666666;
+}
+
+.feedbacks {
+  display: flex;
+  margin: 10rem 0 5rem 0;
+  font-size: 3.75em;
+  color: rgb(0, 166, 128);
+  justify-content: center;
+}
+
+.four-feedbacks {
+  display: flex;
+  flex-wrap: wrap;
+  /*flex-flow: row wrap;*/
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 7rem;
+  /* display: -ms-grid;
+  display: grid;
+  grid-gap: 5em;
+  -ms-grid-columns: 29em 29em;
+  grid-template-columns: 29em 29em;
+  -ms-grid-rows: 13.5em 13.5em;
+  grid-template-rows: 13.5em 13.5em;*/
+}
+
+.four-feedbacks div {
+  display: flex;
+  max-height: 13.5em;
+  max-width: 29em;
+  align-items: flex-start;
+
+}
+
+.feedback {
+  margin-bottom: 5em;
+}
+
+.four-feedbacks div img {
+  margin-right: 1.5em;
+
+}
+
+main .middle-grid .four-feedbacks .feedback .p {
+  display: flex;
+  /*justify-content: space-between;
+  align-items: stretch;*/
+  flex-wrap: wrap;
+}
+
+
+
+
+.footer-container {
+  /*top: 940px;*/
+  min-height: 19.625em;
+  background-image: url(../img/footer.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: white;
+  z-index: -20;
+}
+
+footer .footer-info {
+
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
   flex-wrap: wrap;
   color: white;
 
@@ -424,10 +678,12 @@ footer .main-menu a {
   opacity: 0;
 
 }
-}
-/**************************@media min-width: 1200px**********************/
 
-@media (min-width: 1200px) {
+}
+
+/**************************@media min-width: 1280px**********************/
+
+@media (min-width: 1280px) {
   
   header {
   min-height: 42.4375em;
