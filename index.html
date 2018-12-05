@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
-
+    <!-- Special version of Bootstrap that only affects content wrapped in .bootstrap-iso -->
+    <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
 </head>
 
 <body>
@@ -24,29 +25,16 @@
                 <div><a href="our-tours.html">Our Tours</a></div>
                 <div><a href="blog.html">Blog</a></div>
                 <div><a href="#portfolio">Contact</a></div>
-
-                <!--<li><a href="#feedback">Feedback</a></li>-->
             </div>
         </nav>
         <div class="container-vitamin-sea">
             <p class="sea-h1">Do you need Vitamin&nbsp<span class="sea-bold">Sea</span>?</p>
-
-
             <div class="form-container">
-
-
                 <form class="form-inline">
-
-
                     <input type="text" class="form-control" id="validationCustom03" placeholder="Destination" required>
-
-                    <select class="form-control">
-                        <option>Depart</option>
-                        </select>
-                    <select class="form-control return">
-                        <option>Return</option>
-                        </select>
-
+                    <!-- HTML Form (wrapped in a .bootstrap-iso div) -->
+                    <input class="form-control depart" id="date" name="date" placeholder="Depart" type="text" />
+                    <input class="form-control return" id="date" name="date" placeholder="Return" type="text" />
                     <div><select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
                     <option selected>Rooms</option>
                     <option value="1">One</option>
@@ -65,90 +53,11 @@
                     <option value="2">Two</option>
                     <option value="3">Three</option>
                       </select>
-
-
                         <button type="submit" class="btn btn-warning">Search</button>
                 </form>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                <!--<div class="s002">
-                        <form>
-                        <div class="inner-form">
-                        <div class="input-field first-wrap">
-                        <div class="icon-wrap">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path>
-                        </svg>
-                        </div>
-                        <input id="search" type="text" placeholder="What are you looking for?" />
-                        </div>
-                        <div class="input-field second-wrap">
-                        <div class="icon-wrap">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"></path>
-                        </svg>
-                        </div>
-                        <input class="datepicker" id="depart" type="text" placeholder="29 Aug 2018" />
-                        </div>
-                        <div class="input-field third-wrap">
-                        <div class="icon-wrap">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"></path>
-                        </svg>
-                        </div>
-                        <input class="datepicker" id="return" type="text" placeholder="30 Aug 2018" />
-                        </div>
-                        <div class="input-field fouth-wrap">
-                        <div class="icon-wrap">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"></path>
-                        </svg>
-                        </div>
-                        <select data-trigger="" name="choices-single-defaul">
-                        <option placeholder="">2 Adults</option>
-                        <option>3 Adults</option>
-                        <option>4 Adults</option>
-                        <option>5 Adults</option>
-                        </select>
-                        </div>
-                        <div class="input-field fifth-wrap">
-                        <button class="btn-search" type="button">SEARCH</button>
-                        </div>
-                        </div>
-                        </form>
-                        </div>
-                        <script src="js/extention/choices.js"></script>
-                        <script src="js/extention/flatpickr.js"></script>
-                        <script>
-                        flatpickr(".datepicker",
-                        {});
-                        
-                        </script>
-                        <script>
-                        const choices = new Choices('[data-trigger]',
-                        {
-                        searchEnabled: false,
-                        itemSelectText: '',
-                        });
-                        
-                        </script>-->
                 </div>
             </div>
-            <!--<img src="img/home-vitsea.jpg" alt="home-vitsea" id="home-vitsea">-->
-    </header>
+        </header>
     <main>
         <div class="middle-grid">
             <p class="about-us">About Us</p>
@@ -157,18 +66,17 @@
                     <div class="text-about-us">
                         <p id="text-about-us">Proin dapibus felis justo, quis dignissim mi dignissim at. Sed aliquet dictum faucibus. Ut efficitur facilisis eros, ut accumsan quam varius vel. In sapien turpis, pharetra ac dapibus fermentum, condimentum sed quam. Quisque aliquet
                             eget felis euismod posuere. Pellentesque pharetra augue sit amet finibus aliquam. Fusce gravida nulla vitae nulla pretium, congue sagittis arcu dapibus. In eu tincidunt urna. Vivamus ac purus ut sem blandit varius. Integer
-                            nec tortor leo. Ut efficitur velit eu nulla commodo rutrum. Fusce consectetur eros erat, sit amet consequat purus facilisis id. Proin feugiat aliquam lacus id lacinia. Fusce dictum ut tellus id vulputate.</p>
+                            nec tortor leo. Ut efficitur velit eu nulla commodo rutrum. Fusce consectetur eros erat, sit amet consequat purus facilisis id. Proin feugiat aliquam lacus id lacinia.</p>
                     </div>
                     <div class="titles-our-tours">
-                        <p class="deals-of-the-day">Deals of the day</p>
-                        <p class="best-offers">Best offers</p>
-                        <p class="stars">5 Stars</p>
+                        <a href="our-tours.html" class="deals-of-the-day">Deals of the day</a>
+                        <a href="our-tours.html" class="best-offers">Best offers</a>
+                        <a href="our-tours.html" class="stars">5 Stars</a>
                     </div>
                 </div>
             </div>
             <p class="feedbacks">Feedbacks</p>
             <div class="four-feedbacks">
-
                 <div class="first feedback">
                     <img src="img/Robert Smith.png" alt="Robert Smith" id="robert-smith">
                     <div class="p">
@@ -202,13 +110,8 @@
                     </div>
                 </div>
             </div>
-
         </div>
-
     </main>
-
-    <!--<img src="img/main-sea-img.jpg" alt="main-sea-img" id="main-sea-img">-->
-
     <footer>
         <div class="footer-container">
             <div class="footer-info">
@@ -242,6 +145,14 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- Extra JavaScript/CSS added manually in "Settings" tab -->
+    <!-- Include jQuery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <!-- Include Date Range Picker -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css" />
+    <script type="text/javascript" src="js/index.js"></script>
+
 </body>
 
 </html>
